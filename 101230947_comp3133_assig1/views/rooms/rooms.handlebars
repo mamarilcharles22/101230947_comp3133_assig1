@@ -1,0 +1,20 @@
+<div class="bg-color"></div>
+<section id="rooms">
+    <h1>Select Your Next Stay</h1>
+    <div  id="roomsGrid">
+        {{#each list}}
+            <div>
+                <img src="/uploads/{{this.photo}}">
+                <h2>
+                    {{this.title}}
+                </h2>
+                <h3>
+                    {{this.location}}
+                </h3>
+                <h3>
+                    ${{this.price}} CAD/night
+                </h3>
+            </div>
+        {{/each}}
+    </div>
+</section>

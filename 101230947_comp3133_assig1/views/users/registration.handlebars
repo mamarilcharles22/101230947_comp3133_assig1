@@ -1,0 +1,24 @@
+<section id="form-outside">
+    <form id="form" method="POST" action="/user/registration">
+        <h1>Sign up</h1>
+        {{#each messages}}
+            <div class="error">
+                {{this}}
+            </div>
+        {{/each}}
+
+        <input class="input" type="email" name="email" placeholder="Email">
+        <br>
+        <input class="input" type="text" name="fName" placeholder="First Name">
+        <br>
+        <input class="input" type="text" name="lName" placeholder="Last Name">
+        <br>
+        <input class="input" type="password" name="psw" placeholder="Create a password">
+        <br>
+        <input class="input" type="password" name="psw2" placeholder="Confirm password">
+        <br>
+        <div id="divButton">
+            <input type="submit" id="findButton" value="Sign up">
+        </div>
+    </form>
+</section>

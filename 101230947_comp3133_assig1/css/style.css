@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #484848;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    text-align: center;
+}
+
+header > a > div {
+    background: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-content: center;
+    height: 100px;
+    width: 120px;
+}
+
+header > nav {
+    line-height: 100px;
+    text-align: right;
+    align-items: center;
+    height: 100px;
+}
+
+header > nav > a {
+    color: #c8c8c8;
+    padding-right: 10px;
+    font-size: 1.1rem;
+}
+
+header > nav > a:hover {
+    color: #eee;
+    transition: all 0.3s ease;
+}
+
+.bg {
+    background: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: inline-block;
+    width: 100%;
+    min-height: 900px;
+}
+
+.bg-color {
+    background-color: #484848;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: inline-block;
+    width: 100%;
+    min-height: 100px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background: #484848;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    align-items: center;
+}
+
+#form-outside {
+    padding: 50px 0px 100px 60px;
+    width: 400px;
+    height: 650px;
+}
+
+#form {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    padding: 15px;
+}
+
+#form > h1 {
+    padding: 15px;
+    color: #484848;
+    font-size: 30px;
+}
+
+#form > label {
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.input {
+    font-size: 17px;
+    border: 1px solid #ebebeb;
+    margin: 5px 0px 10px 15px;
+    padding: 12px;
+    width: 83%;
+    text-overflow: ellipsis;
+    background-color: transparent;
+    color: #656565;
+    border-radius: 4px;
+}
+
+.select {
+    font-size: 17px;
+    border: 1px solid #ebebeb;
+    margin: 5px 0px 10px 15px;
+    padding: 12px;
+    width: 90%;
+    text-overflow: ellipsis;
+    background-color: transparent;
+    color: #656565;
+    border-radius: 4px;
+}
+
+#divButton {
+    text-align: right;
+}
+
+#findButton {
+    background-color: #e4685d;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight:bold;
+    padding: 17px 24px;
+    text-decoration: none;
+    border: none;
+    margin: 15px;
+}
+
+#promotion {
+    padding: 60px 0 60px 60px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#promotion > h1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+#promotionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#promotionGrid > div {
+    max-height: 350px;
+    height: 100%;
+}
+
+#promotionGrid > div > img {
+    height: 100%;
+}
+
+#informational {
+    padding: 0px 60px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#informational > h1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+#informationalGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 30px;
+}
+
+#informationalGrid > div {
+    max-height: 315px;
+    align-items: center;
+}
+
+#informationalGrid > div > h2 {
+    font-size: 20px;
+    color: #656565;
+    font-weight: normal;
+}
+
+#rooms {
+    padding: 60px;
+    min-height: 710px;
+}
+
+#rooms > h1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+#roomsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+#roomsGrid > div {
+    width: 300px;
+    padding: 15px;
+}
+
+#roomsGrid > div > img {
+    height: 210px;
+    width: 100%;
+}
+
+#roomsGrid > div > h2 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#roomsGrid > div > h3 {
+    font-size: 14px;
+    line-height: 1.25em;
+    color: #484848;
+    font-weight: 400;
+}
+
+.error {
+    margin-bottom: 1rem;
+    padding :1rem 1.3rem;
+    background-color: pink;
+    border :1px solid red;
+}
+
+.editButton {
+    background-color: rgb(85, 165, 210);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight:bold;
+    padding: 10px 17px;
+    text-decoration: none;
+    border: none;
+    margin: 15px;
+}
+
+.delButton {
+    display: inline;
+    background-color: #e4685d;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight:bold;
+    padding: 10px 17px;
+    text-decoration: none;
+    border: none;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 1130px) {
+    #roomsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #roomsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bg {
+        min-height: 200px;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    #form-outside {
+        padding: 0;
+        width: auto;
+    }
+
+    #promotion {
+        padding: 0;
+    }
+
+    #promotion > h1 {
+        font-size: 20px;
+    }
+
+    #promotionGrid {
+        display: block;
+    }
+
+    #promotionGrid > div > img {
+        height: 250px;
+    }
+
+    #informationalGrid {
+        grid-template-columns: 1fr;
+    }
+
+    #informational > h1 {
+        font-size: 20px;
+    }
+
+    #informationalGrid > div > iframe {
+        width: 262px;
+        height: 150px;
+    }
+}

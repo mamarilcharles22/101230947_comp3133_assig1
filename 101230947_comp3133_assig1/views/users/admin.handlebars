@@ -1,0 +1,32 @@
+<section id="form-outside">
+    <div id="form">
+        <h1>Admin Dashboard</h1>
+        <br>
+        <br>
+        <h2>Welcome {{t.fName}} {{t.lName}}</h2>
+        <br>
+        <h3>
+            <a href="/room/add">Create a room</a>
+        </h3>
+        <br>
+        <div>
+            {{#each list}}
+                <div>
+                    {{this.title}} <br>
+                    <a class="editButton" href="/room/edit/{{this._id}}">Edit</a> &nbsp;&nbsp;
+                    <form class="delButton" id="deleteButtonForm" method="POST" action="/room/delete/{{this._id}}?_method=DELETE">
+                        <input type="submit" class="delButton" value="Delete" data-id="{{this.id}}" data-title="{{this.title}}">
+                    </form>
+                </div>
+            {{else}}
+                No rooms in database
+            {{/each}}
+        </div>
+        <br>
+        <br>
+        <div id="divButton">
+            <a href="/user/logout" id="findButton">Logout</a>
+        </div>
+        <br>
+    </div>
+</section>
